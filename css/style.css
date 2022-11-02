@@ -4,6 +4,148 @@
     box-sizing: border-box;
 }
 
-h1{
-    color: red;
+
+
+
+
+/*  utilities */
+
+.flex{
+    display: flex;
+}
+
+.flex-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container{
+    width: 80%;
+    padding: 2rem 0;
+}
+
+
+
+/* HEADER */
+
+header{
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
+
+header div.logo,
+header nav{
+    width: 50%;
+    border: 2px dotted black ;
+}
+
+
+/* MAIN */
+
+/*  specs section */
+
+section.specs article.card {
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+    margin-top: 2rem;
+    border: 2px solid black;
+}
+
+
+
+/*  planning section */
+
+section.planning {
+    background-color: violet;
+}
+
+section.planning div.col {
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+    margin-top: 2rem;
+}
+
+
+/*  testimonials section */
+
+section.testimonials div.container{
+    align-items: center;
+    flex-direction: column;
+}
+
+section.testimonials article.card {
+    background-color: violet;
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+    margin-top: 2rem;
+}
+
+
+
+/*  benefit section */
+
+section.benefit {
+    background-color: violet;
+}
+
+section.benefit h2{
+    text-align: center;
+}
+
+section.benefit article.card {
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+    margin-top: 2rem;
+    background-color: white;
+}
+
+
+
+/*  about-us section */
+
+section.about-us div.col {
+    width: 100%;
+    height: 500px;
+    border: 2px solid black;
+    margin-top: 2rem;
+}
+
+
+/*  get-started section */
+
+section.get-started {
+    background-color: violet;
+}
+
+section.get-started div.flex {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*  FOOTER */
+
+footer{
+    background-color: gray;
+    height: 100px;
+}
+
+footer div.container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
