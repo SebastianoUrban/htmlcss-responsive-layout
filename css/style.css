@@ -4,8 +4,16 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main-color: #3682fa ;
+    --secondary-color: #f9bf66 ;
+    --main-bg-color: #b7dcfe ;
+    --secondary-bg-color: #9890e2 ;
+}
 
-
+html{
+    font-family: 'PT Sans', sans-serif;
+}
 
 
 /*  utilities */
@@ -31,21 +39,53 @@
     padding: 2rem 0;
 }
 
+.button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: white;
+    border: none;
+}
 
 
 /* HEADER */
 
 header{
-    height: 50px;
+    height: 70px;
     width: 100%;
-    background-color: blue;
+    background-color: var(--main-color);
     color: white;
 }
 
-header div.logo,
-header nav{
-    width: 50%;
+header figure.logo{
+    width: 35%;
     border: 2px dotted black ;
+}
+
+header nav{
+    align-items: center;
+    justify-content: flex-end;
+    width: 65%;
+}
+
+figure.logo img{
+    height: 40px;
+}
+
+header ul{
+    list-style-type: none;
+    align-content: center;
+}
+
+header li{
+    display: none;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+header li:first-child{
+    display: inline-block;
+    font-size: 1.5rem;
 }
 
 
@@ -58,11 +98,50 @@ section.specs div.cards {
 }
 
 section.specs article.card {
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
-    background-color: aqua;
+    background-color: var(--main-bg-color);
     margin-top: 2rem;
-    border: 2px solid black;
+    border-radius: 1.5rem;
+    padding: 2rem 1.5rem 0 1.5rem;
+    text-align: center;
+    
+}
+
+section.specs article.card:first-child{
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+section.specs article.card>i {
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+}
+
+section.specs h2 {
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+section.specs p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    color: rgb(116, 116, 116);
+}
+
+section.specs button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 0.5rem 3rem;
+}
+
+section.specs img {
+    width: 250px;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
 }
 
 
@@ -211,6 +290,25 @@ footer div.container {
     .container{
         width: 893px;
         padding: 2rem 0;
+    }
+
+    /*  header */
+    header li{
+        display: inline-block;
+    }
+    
+    header li:first-child{
+        display: none;
+    }
+
+    /*  soecs */
+    section.specs article.card:first-child{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    section.specs img {
+        align-self: flex-end;
     }
 
     /*  planning section */

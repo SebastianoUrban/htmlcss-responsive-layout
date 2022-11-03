@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Layout</title>
 
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/7a408aaeb9.js" crossorigin="anonymous"></script>
 </head>
     <body>
         <header class="flex-centered">
             <div class="container flex">
-                <div class="logo">logo</div>
-                <nav>menu</nav>  
+                <figure class="logo">
+                    <img src="./img/logo.png" alt="Logo">
+                </figure>
+                <nav class="flex">
+                    <ul class="flex">
+                        <li><i class="fa-solid fa-bars"></i></li>
+                        <li>Planning</li>
+                        <li>Testimonials</li>
+                        <li>Features</li>
+                        <li>About us</li>
+                        <li>Get Started</li>
+                    </ul>
+                </nav>  
             </div>
         </header>
 
@@ -22,11 +38,34 @@
             <section class="specs flex-centered">
                 <div class="container">
                     <div class="cards flex-wrap">
-                        <article class="card"></article>
-                        <article class="card"></article>
-                        <article class="card"></article>
-                        <article class="card"></article>
-                        <article class="card"></article>
+                        <article class="card flex">
+                            <div class="text">
+                                <h2>Get a demo application</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et deserunt sapiente velit eligendi modi autem voluptatibus nobis inventore iure excepturi.</p>
+                                <button class="button"><i class="fa-brands fa-apple"></i> App Store</button>
+                            </div>
+                            <img src="./img/phone.png" alt="Phone figure">
+                        </article>
+                        <article class="card">
+                            <i class="fa-solid fa-file-code"></i>
+                            <h2>Clean Code</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quas pariatur cum magnam soluta id beatae vitae molestias blanditiis quam.</p>
+                        </article>
+                        <article class="card">
+                            <i class="fa-solid fa-compass-drafting"></i>
+                            <h2>Web Design</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quas pariatur cum magnam soluta id beatae vitae molestias blanditiis quam.</p>
+                        </article>
+                        <article class="card">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h2>Developement</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quas pariatur cum magnam soluta id beatae vitae molestias blanditiis quam.</p>
+                        </article>
+                        <article class="card">
+                            <i class="fa-solid fa-bullhorn"></i>
+                            <h2>Branding</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quas pariatur cum magnam soluta id beatae vitae molestias blanditiis quam.</p>
+                        </article>
                     </div>
                 </div>
             </section>
