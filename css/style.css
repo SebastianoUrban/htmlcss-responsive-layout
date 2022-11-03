@@ -53,6 +53,10 @@ header nav{
 
 /*  specs section */
 
+section.specs div.cards {
+    justify-content: space-between;
+}
+
 section.specs article.card {
     height: 500px;
     width: 100%;
@@ -104,6 +108,10 @@ section.benefit h2{
     text-align: center;
 }
 
+section.benefit div.cards {
+    justify-content: space-between;
+}
+
 section.benefit article.card {
     width: 100%;
     height: 500px;
@@ -115,6 +123,10 @@ section.benefit article.card {
 
 
 /*  about-us section */
+
+section.about-us div.row {
+    justify-content: space-between;
+}
 
 section.about-us div.col {
     width: 100%;
@@ -148,4 +160,65 @@ footer div.container {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/*  Tablet */
+@media all and (min-width: 768px){
+
+    .container{
+        width: 90%;
+        padding: 2rem 0;
+    }
+
+    /* specs section */
+    section.specs article.card {
+        width: calc((100% - 2rem) / 3);
+    }
+
+    section.specs article.card:first-child {
+        width: calc((100% - 2rem) / 3 * 2 + 1rem);
+    }
+
+    /* benefit sections */
+    section.benefit article.card {
+        width: calc((100% - 1rem) / 2);
+    }
+
+    /*  about-us section */
+    section.about-us div.col {
+        width: calc((100% - 1rem) / 2);
+    }
+}
+
+
+/* Desktop */
+@media all and (min-width: 992px){
+
+    .container{
+        width: 893px;
+        padding: 2rem 0;
+    }
+
+    /* specs section */
+    section.specs article.card {
+        width: calc((100% - 2rem) / 3);
+    }
+
+    section.specs article.card:first-child {
+        width: calc((100% - 2rem) / 3 * 2 + 1rem);
+    }
+
+    /* benefit sections */
+    section.benefit article.card {
+        width: calc((100% - 1rem) / 2);
+    }
+
+    /*  about-us section */
+    section.about-us div.col {
+        width: calc((100% - 1rem) / 2);
+    }
 }
